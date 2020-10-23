@@ -11,4 +11,18 @@ body{
 } 
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
-                                 
+#main-container-div{
+   display: flex;
+   flex-direction: column;
+}
+.Post-btns{
+  background-color: rgb(243, 162, 55);
+  padding: 10px;
+  font-weight: bold;
+  margin: 1%;
+}      
+.postButtons{
+   display: flex;
+   justify-content: center;
+   padding-top: 10%;
+}                     
