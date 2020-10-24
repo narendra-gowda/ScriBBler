@@ -9,6 +9,10 @@ body{
    overflow:hidden;
    display: block;
 } 
+@font-face{
+   font-family: modal-title-font;
+   src: url(Abel-Regular.ttf);
+}
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
 #main-container-div{
@@ -25,4 +29,107 @@ body{
    display: flex;
    justify-content: center;
    padding-top: 10%;
-}                     
+}   
+.bg-modal{
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.7);
+   position: absolute;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   display: none;
+   
+}   
+.modal-content{
+   width: 400px;
+   height: 470px;
+   background-color: white;
+   border-radius: 3px;
+   position: relative;
+   padding: 0px 20px;
+   margin-top: 10%;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,1),0 6px 20px 0 rgba(0,0,0,1);
+   -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+} 
+/* Add Animation */
+@-webkit-keyframes animatetop {
+   from {top:-300px; opacity:0} 
+   to {top:0; opacity:1}
+ }
+ 
+ @keyframes animatetop {
+   from {top:-300px; opacity:0}
+   to {top:0; opacity:1}
+ }
+ 
+.modal-header{
+   font-family: modal-title-font;
+  /* margin: 0px 0px; */
+  padding-top: 2px;
+   border-bottom:solid 2px gray;   
+}
+.modal-title{
+   text-align: center;
+   font-size: 0.8cm;
+   
+} 
+.close-modal{
+   right: 10px;
+   position: absolute;
+   font-size: 1cm;
+   color: grey;
+   cursor: pointer;
+   
+}   
+.modal-body{
+   font-family: modal-title-font;
+
+} 
+.label-names{
+   font-weight: bold;
+   font-size: larger;
+   
+}
+form{
+   padding: 28px 0px;
+   
+}
+input{
+   width: 92%;
+   padding: 4%;
+   background-color: rgb(238, 238, 238);
+   border: none;
+   margin-top: 5px;  
+   }
+.modal-footer{
+   padding: 8px 0px;
+   font-family: modal-title-font;
+   font-size: larger;
+
+}
+.sign-in-btn{
+   background-color: rgb(69, 189, 69);
+   color: white;
+   border: none;
+   width: 100%;
+   padding: 4%;
+   font-weight: bold;
+   font-size: 85%;
+   cursor: pointer;
+   margin-top: 8%;   
+}
+#signp-modal-link{
+   text-align: center;
+   /* padding-top: 7%; */
+   font-weight: bolder;
+}
+a{
+   color: blue;
+   text-decoration: none;
+}
+        

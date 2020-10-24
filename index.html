@@ -14,40 +14,58 @@
 </head>
 <body>
     <div id="main-container-div">
-
+        
         <div class="header">
-
             <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
             <div id="website-logo">
                 <h1>ScriBBler</h1>
                 <p>Explore, Imagine, Create</p>
             </div>
             <div id="header-btns">
-                <button class="login-btn">Sign In</button>
-                <button class="login-btn">Sign Up</button>
+                <button id="sign-in-btn" class="login-btn">Sign In</button>
+                <button id="sign-up-btn" class="login-btn">Sign Up</button>
             </div>
-
         </div>
            
         <div class="postButtons">
-
             <!-- Insert code for All Posts & Create Post button here -->
             <button class="Post-btns">All Posts</button>
             <button class="Post-btns">Create Post</button>
-
         </div>
     </div>
 
     <div>
-
-    	<!-- Insert code for Sign In modal here -->
-
+        <!-- Insert code for Sign In modal here -->
+        <div id="modal" class="bg-modal">
+            <div class="modal-content">
+                 <div class="modal-header">
+                    <span id="close-btn" class="close-modal">&times;</span>
+                     <h2 class="modal-title">Welcome Back!</h2>                     
+                 </div>   
+                 <div class="modal-body">
+                     <form>
+                         <label for="username" class="label-names">Username</label><br>
+                         <input type="text" name="username" id="username" placeholder="Enter Username" required><br><br>
+                         <label for="password" class="label-names">Password</label><br>
+                         <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                         <!-- <input type="submit"> -->
+                         <button id="modal-sign-in-btn" type="submit" class="sign-in-btn">Sign In</button>
+                     </form>
+                 </div> 
+                 <div class="modal-footer">                    
+                     <div id="signp-modal-link">
+                         <span>Not a memeber?</span>
+                        <a href="">Sign Up</a>
+                    </div>                     
+                 </div>    
+            </div> 
+        </div>
     </div>
 
     <div>
 
     	<!-- Insert code for Sign Up modal here -->
-
+ 
     </div>
 
     <div>
